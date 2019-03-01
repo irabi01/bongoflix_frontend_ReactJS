@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,3 +11,432 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+/*==================================== navigation style =====================================*/
+.navigation nav{
+  background-color: #3399ff;
+  text-align: center;
+}
+.navigation nav .navbar-brand{
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+#cpBtn{
+  padding: 2px 5px;
+}
+#cpBtn > div{
+  width: 20px;
+  height: 4px;
+  background: #fff;;
+  margin: 3px 0px;
+  border-radius: 4px;
+}
+.navigation #navbarSupportedContent ul li .try_for_free{
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #fff;
+}
+.navigation #navbarSupportedContent ul li .login_button{
+  background-color: #093f75;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  outline: 0;
+}
+.navigation #navbarSupportedContent ul li .subscription_button{
+  color: #fff;
+  padding: 10px 20px;
+  outline: 0;
+}
+.navigation #navbarSupportedContent ul li .account_button{
+  color: #fff;
+  padding: 10px 20px;
+  outline: 0;
+}
+.navigation #navbarSupportedContent ul li .logout_button{
+  color: #fff;
+  padding: 10px 20px;
+  outline: 0;
+}
+
+
+
+
+
+/*===========================================================
+ app.js style 
+ ===========================================================*/
+ 
+
+
+/*======================================= home page =============================================*/
+.home{
+   text-align: center;
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/bg.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   color: #fff;
+   padding-top: 100px;
+   padding-bottom: 200px;
+}
+.home h1{
+   font-size: 50px;
+   margin-top: 100px;
+   color: #fff;
+   font-weight: bold;
+}
+
+.home h2{
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+.home h3{
+  font-size: 30px;
+  margin-top: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+.home .try_link{
+  border: 1px solid #ff0000;
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-weight: 700;
+}
+/*====================================== packages page ============================================*/
+.packages {
+  padding: 100px 0px;
+}
+.packages h1{
+  font-size: 50px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+ .pricingtable{
+   padding-bottom: 25px;
+   margin: 0 20px;
+   background: white;
+   border-radius: 20px;
+   border-bottom: 5px solid #4fc2f8;
+   text-align: center;
+   z-index: 1;
+   position: relative;
+ }
+ .pricingtable .pricingtable_header{
+   position: relative;
+ }
+ .pricingtable .pricingtable_header:before,
+ .pricingtable .pricingtable_header:after
+ {
+  content: "";
+  border-top: 10px solid #48434a;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+.pricingtable .pricingtable_header:after{
+  border-left: none;
+  left: auto;
+  right: -10px;
+}
+.pricingtable .title{
+  padding: 25px 5px;
+  margin: 0;
+  background: #030004;
+  background: linear-gradient(to top, #300004,#314047);
+  border-radius: 20px 20px 0 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+.pricingtable .title:before,.pricingtable .title:after{
+  content: "";
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent;
+  position: absolute;
+  bottom: -114px;
+  left: -30px;
+}
+.pricingtable .title:after{
+  border-left: none;
+  left: auto;
+  right: -30px;
+}
+.pricingtable .price_value{
+  display: block;
+  padding: 15px 5px;
+  margin: 0 -10px;
+  background: #4fc2f8;
+  font-weight: bold;
+  color: #fff
+}
+
+.pricingtable .month{
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 3px;
+  position: relative;
+  top: -12px;
+}
+.pricing_content{
+  padding: 15px 0;
+  margin: 0 30px;
+  list-style: none;
+  /* border: 1px solid #333333;
+  padding: 20px 20px; */
+}
+.pricing_content li{
+  padding: 8px 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #b2bbc0;
+  line-height: 30px;
+  border-bottom: 2px dashed #e3e3e3;
+  position: relative;
+}
+.pricing_content li:last-child{
+  border-bottom: none;
+}
+.pricingtable_subscribe{
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #4fc2f8;
+  box-shadow: 3px 3px 10px 0 rgba(0,0,0, 0.08);
+  perspective: 300px;
+  z-index: 1;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+
+/*==================================================================
+ register page 
+ ===================================================================*/
+.register{
+  padding-top: 150px;
+  padding-bottom: 200px;
+ }
+.register .register_container{
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  color: #fff;
+  padding: 40px 30px;
+}
+.register_container h1{
+  font-size: 30px;
+  padding-left: 0px;
+}
+.register_container p span .login{
+  color: #fff;
+}
+.register_container form input[type=email]{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+.register_container form input[type=password]{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+.register_container form .plan_selection{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+.register_container form button{
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  border-radius: 0px;
+}
+
+/*==================================================================
+ login page 
+ ===================================================================*/
+ .login{
+  padding-top: 150px;
+  padding-bottom: 200px;
+ }
+ .login .login_container{
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  color: #fff;
+  padding: 40px 30px;
+}
+.login .login_container h1{
+  font-size: 30px;
+  padding-left: 0px;
+}
+.login_container p span .register{
+  color: #fff;
+}
+.login_container form input[type=email], input[type=password]{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+.login_container form input[type=password]{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+.login_container form button{
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  border-radius: 0px;
+}
+.login_container form p .reset_password{
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  border-radius: 0px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 10px 0px;
+  text-transform: capitalize;
+}
+.login_container form .login_line{
+  background-color: #fff;
+}
+
+
+/*==================================================================
+ forget password page 
+ ===================================================================*/
+ .forget_password{
+  padding-top: 150px;
+  padding-bottom: 200px;
+ }
+ .forget_password_container{
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  color: #fff;
+  padding: 40px 30px;
+}
+.forget_password_container h1{
+  font-size: 30px;
+  padding-left: 0px;
+}
+.forget_password_container p span .register{
+  color: #fff;
+}
+.forget_password_container form input[type=email]{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+.forget_password_container form button{
+  width: 70%;
+  height: 45px;
+  color: #fff;
+  border-radius: 0px;
+}
+ .forget_password_container .reset_password{
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  border-radius: 0px;
+  text-transform: capitalize;
+}
+.forget_password_container form .login_line{
+  background-color: #fff;
+}
+
+/*====================================================================
+ payment method page 
+ ===================================================================*/
+ .payment_method{
+   padding-top: 150px;
+   padding-bottom: 200px;
+ }
+ .payment_method h1{
+   font-size: 25px;
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ .payment_method form input[type = text]{
+   width: 100%;
+   height: 30px;
+   border-radius: 0px;
+   border: 1px solid #3399ff;
+   outline: 0;
+ }
+ .payment_method  form input[type=number]{
+   width: 100%;
+   height: 30px;
+   border-radius: 0px;
+   border: 1px solid #3399ff;
+   outline: 0;
+ }
+ .payment_method  form select{
+   width: 100%;
+   height: 40px;
+   border-radius: 0px;
+   border: 1px solid #3399ff;
+   outline: 0;
+ }
+ .payment_method  form button{
+   background: #3399ff;
+   color: #fff;
+   border: none;
+   border-radius: 0px;
+   height: 40px;
+   width: 100%;
+ }
+ .payment_method  form button:hover{
+  background: #3399ff;
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+  height: 40px;
+  width: 100%;
+}
+/*====================================================================
+ footer component 
+ =====================================================================*/
+.footer_container{
+   text-align: center;
+   background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('images/bg.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 700;
+   padding: 100px 0px;
+   font-family: 'Courier New', Courier, monospace;
+}
+ .footer{
+   color: #fff;
+ }
+ .footer .footer_line{
+   background-color: #fff;
+ }
